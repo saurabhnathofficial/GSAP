@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    padding: 20vh 0;
+
+}
+.anime{
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

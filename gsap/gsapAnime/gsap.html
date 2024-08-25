@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #main {
+            background-color: rgba(0, 0, 0, 0.865);
+            min-height: 100vh;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        nav {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5%;
+        }
+
+        nav h2 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        #nav_part2 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        section{
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 10%;
+           
+            position: relative;
+        }
+        section h1{
+            font-size: 7vw;
+            text-align: start;
+            line-height: 7vw;
+            font-weight: 100;
+            z-index: 9;
+            position: relative;
+        }
+        section h1:nth-child(2){
+            margin-left: 15%;
+        }
+        section h1:nth-child(3){
+            margin-left: 30%;
+
+        }
+        img{
+            height: 60vh;
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            transform: translate(-50%,-50%);
+            z-index: 8;
+        }
+        #img1{
+            rotate: -6deg;
+            top: 50%;
+            left: 32%;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+        }
+        #img2{
+            rotate: 6deg;
+            top: 50%;
+            left: 32%;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <nav>
+            <h2>SaurabhNath</h2>
+            <div id="nav_part2">
+                <h2>home</h2>
+                <h2>about</h2>
+                <h2>services</h2>
+                <h2>portfolio</h2>
+            </div>
+
+        </nav>
+        <section>
+            <h1>fronted</h1>
+            <h1>backend</h1>
+            <h1>full</h1>
+
+            <img id="" src="../../../../CSS/dribble clone/assets/img1.png" alt="">
+            <img id="img1" src="../../../../CSS/dribble clone/assets/img5.png" alt="">
+            <img id="img2" src="../../../../CSS/dribble clone/assets/img7.jpeg" alt="">
+        </section>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var tl = gsap.timeline();
+        tl.from("nav h2", {
+            y: -50,
+            opacity:0,
+            duration: 1,
+            stagger: .1
+        })
+
+        tl.from("section h1",{
+            x:-100,
+            opacity:0,
+            duration:1,
+            stagger:.2
+        })
+        tl.from("img",{
+            x: 100,
+            duration: .7,
+            rotate:50,
+            opacity:0,
+            stagger:0.5
+        })
+    </script>
+</body>
+
+</html>

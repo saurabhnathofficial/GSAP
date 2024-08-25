@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#main{
+    width: 100%;
+    background-color: black;
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(92, 227, 227);
+    position: relative;
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(69, 156, 222);
+    position: relative;
+
+}
+.page3{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(112, 222, 69);
+    position: relative;
+    
+}
+.box{
+    height: 35vh;
+    width: 35vh;
+    background-color: blueviolet;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
